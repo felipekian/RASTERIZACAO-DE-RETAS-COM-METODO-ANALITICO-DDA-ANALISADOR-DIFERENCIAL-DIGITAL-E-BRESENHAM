@@ -1,0 +1,3 @@
+gcc analitico_line.c -o cod -lm
+
+-lm para adicionar a biblioteca math.h
