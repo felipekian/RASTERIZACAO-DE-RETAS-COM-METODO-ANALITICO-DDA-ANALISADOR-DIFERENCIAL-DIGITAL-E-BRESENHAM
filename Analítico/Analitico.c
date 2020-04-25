@@ -23,34 +23,42 @@ void metodoAnalitico(int matrix[TAM_MATRIX][TAM_MATRIX], int x1, int y1, int x2,
 
 void pause(){
     getchar();
+    getchar();
 }
 
 void imprimeMatrix(int matrix[TAM_MATRIX][TAM_MATRIX]){
     int i,j;
     for(i=0;i<TAM_MATRIX;i++){
         for(j=0;j<TAM_MATRIX;j++){
-            printf("%d",matrix[i][j]);
+        	if(matrix[i][j]==1){
+				printf(".");
+			}else{
+				printf(" ");
+			}            
         }
         printf("\n");
-    }
-    pause();
+    }    
 }
 
 int main(){
 
-    printf("\t\tAlgoritmo metodo analitico\nOBS: Matriz tamanho maximo %dx%d\n\n",TAM_MATRIX,TAM_MATRIX);
-
-    int x1,y1,x2,y2;
-    int matrix[TAM_MATRIX][TAM_MATRIX]={0};
-
-    printf("Informe as coordenadas de x1 e y1.\n>> ");
-    scanf("%d %d",&x1,&y1);
-    printf("Informe as coordenadas de x2 e y2.\n>> ");
-    scanf("%d %d",&x2,&y2);
-    printf("\n");
-
-    metodoAnalitico(matrix, x1,y1,x2,y2);
-    imprimeMatrix(matrix);
-
+	while(1){
+	    printf("\tAlgoritmo Analitico\n\nOBS: Matriz tamanho maximo %dx%d\n\n",TAM_MATRIX,TAM_MATRIX);
+	
+	    int x1,y1,x2,y2;
+	    int matrix[TAM_MATRIX][TAM_MATRIX]={0};
+	
+	    printf("Informe as coordenadas de x1 e y1.\n>> ");
+	    scanf("%d %d",&x1,&y1);
+	    printf("Informe as coordenadas de x2 e y2.\n>> ");
+	    scanf("%d %d",&x2,&y2);
+	    printf("\n");
+	
+	    metodoAnalitico(matrix, x1,y1,x2,y2);
+	    imprimeMatrix(matrix);
+	    
+	    pause();
+	    system("cls");
+	}
 	return 0;
 }
