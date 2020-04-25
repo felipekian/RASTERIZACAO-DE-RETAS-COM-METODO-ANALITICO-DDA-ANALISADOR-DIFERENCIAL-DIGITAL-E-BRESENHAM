@@ -52,6 +52,14 @@ void metodoAnalitico(int matrix[TAM_MATRIX][TAM_MATRIX], int x1, int y1, int x2,
 }
 ```
 
+### IMAGENS
+
+![](Imagens_markdown/analitico_caso_1.png)
+
+![](Imagens_markdown/analitico_caso_2.png)
+
+---
+
 ## ALGORITMO DDA (ANALISADOR DIFERENCIAL DIGITAL)
 
 O algoritmo DDA analisador diferencial digital, veio para melhorar os resultados do método analítico como a falha que acontece quando a inclinação da reta é maior que 45°. Ele usa técnica baseada no calculo de delta X e delta Y, onde m=delta_y/delta_X, delta_y=m*delta_X e
@@ -129,6 +137,13 @@ void algoritmo_dda(int matrix[TAM_MATRIX][TAM_MATRIX], int x1, int y1, int x2, i
 
 ```
 
+### IMAGENS
+
+![](Imagens_markdown/DDA_caso_1.png)
+
+![](Imagens_markdown/DDA_caso_2.png)
+
+---
 
 ## ALGORITMO BRESENHAM PARA SEMIRRETAS
 
@@ -198,11 +213,18 @@ void bresenham_line(int matrix[TAM_MATRIX][TAM_MATRIX], int x0,int y0, int x1, i
 }
 ```
 
+### IMAGENS
+
+![](Imagens_markdown/Bresenham_caso_1.png)
+
+![](Imagens_markdown/Bresenham_caso_2.png)
+
+---
+
 ## CONCLUSÃO
 
 Vimos como o método analítico tinham suas falhas, o DDA resolveu as falhas que o método analítico apresenta, mas ainda era muito pesado por precisar de operações custosas para o computador como aritmética de ponto flutuante e arredondamentos. Então, Bresenham criou seu
 algoritmo que além de muito inteligente é muito eficiente computacionalmente, e resolve os problemas dos outros algoritmos anteriores.
 
 
-
-
+# OBRIGADO PELA ATENÇÃO!
